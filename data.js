@@ -22,16 +22,16 @@ const cvData = {
     experience: [
         {
             year: "2026-present",
-            role: "Teaching Assistant for Geophysics and Hydrology Course ",
+            role: "Teaching Assistant for Earth System and Processes Course",
             institute: "Indian Institute of Science Education and Research, Kolkata",
-            description: "Served as a teching assistant for a 2nd year course.",
-            certificate: "./assets/TA-A-25-ES2104-22MS065.pdf"
+            description: "Serving as a teching assistant for 1st year course.",
+            certificate: ""
         },
         {
             year: "2025",
             role: "Teaching Assistant for Geophysics and Hydrology Course ",
             institute: "Indian Institute of Science Education and Research, Kolkata",
-            description: "Served as a teching assistant for a 2nd year course.",
+            description: "Served as a teching assistant for 2nd year course.",
             certificate: "./assets/TA-A-25-ES2104-22MS065.pdf"
         },
         {
