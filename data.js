@@ -21,8 +21,15 @@ const cvData = {
     ],
     experience: [
         {
+            year: "2026-present",
+            role: "Teaching Assistant for Geophysics and Hydrology Course ",
+            institute: "Indian Institute of Science Education and Research, Kolkata",
+            description: "Served as a teching assistant for a 2nd year course.",
+            certificate: "./assets/TA-A-25-ES2104-22MS065.pdf"
+        },
+        {
             year: "2025",
-            role: "Teaching Assistant in Geophysics and Hydrology Course ",
+            role: "Teaching Assistant for Geophysics and Hydrology Course ",
             institute: "Indian Institute of Science Education and Research, Kolkata",
             description: "Served as a teching assistant for a 2nd year course.",
             certificate: "./assets/TA-A-25-ES2104-22MS065.pdf"
@@ -55,7 +62,7 @@ const cvData = {
             institution: "I-HUB Quantum Technology Foundation",
             year: "2023",
             certificate: "./assets/quantum computing certificate.png",
-            description: "Certificate in Quantum Computing."
+            description: "Certificate of participation in Quantum Computing workshop."
         }
     ],
     publications: [
@@ -66,13 +73,13 @@ const cvData = {
             title: "Sedimentology Field Trip",
             year: "2024",
             folder: "sedimentology FT",
-            description: "Exploration of sedimentary structures and depositional environments.",
+            description: "Exploration of sedimentary structures and depositional environments along the MohandRao , finding markers for tectonic activity along the Siwaliks.",
             report: "./gallery/sedimentology FT/sedimentology field report.pdf",
             images: [
-                { file: "WhatsApp Image 2026-01-26 at 3.52.43 AM.jpeg", caption: "Outcrop observation" },
-                { file: "img2.jpeg", caption: "Sedimentary layering" },
-                { file: "img3.jpeg", caption: "Sample identification" },
-                { file: "img4.jpeg", caption: "Group picture" }
+                { file: "WhatsApp Image 2026-01-26 at 3.52.43 AM.jpeg", caption: "Outcrop observation along Mohand River, Dehradun" },
+                { file: "img2.jpeg", caption: "Ancient Foreland Basin stratigraphy of multistorey bedding" },
+                { file: "img3.jpeg", caption: "Large scale trough-cross stratification and 3D dunes on " },
+                { file: "img4.jpeg", caption: "Gravel-Sand transition zone at Siwaliks" }
             ]
         },
         {
@@ -82,13 +89,13 @@ const cvData = {
             description: "Study of rock deformation and petrological composition.",
             report: "./assets/Structural_Geology_Report.pdf",
             images: [
-                { file: "img1.jpeg", caption: "Rock formation analysis" },
-                { file: "img2.jpeg", caption: "Field sketch and mapping" },
-                { file: "img3.jpeg", caption: "Mineral identification" },
+                { file: "img1.jpeg", caption: "Crenulation formation analysis " },
+                { file: "img2.jpeg", caption: "Fracture and Bedding Plan measurement" },
+                { file: "img3.jpeg", caption: "Hinge of folded bed identification" },
                 { file: "img4.jpeg", caption: "Structural measurement" },
-                { file: "img5.jpeg", caption: "Geological fold structure" },
-                { file: "img6.jpeg", caption: "Petrological sample" },
-                { file: "img7.jpeg", caption: "Group discussion at site" }
+                { file: "img5.jpeg", caption: "Dalma Volcanics of Signhbhum Mobile Belt; Burudi Lake" },
+                { file: "img6.jpeg", caption: "Exposed Mylonites and Shear zone alonng Subarnarekha River" },
+                { file: "img7.jpeg", caption: "Location position on topo map" }
             ]
         }
     ]
