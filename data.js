@@ -10,7 +10,7 @@ const cvData = {
             twitter: "https://x.com/hrishikeshsen4"
         }
     },
-    about: "TBA",
+    about: "I am a Music addicted Earth Sciences undergraduate at IISER Kolkata dedicated to decoding deep-time ecological narratives. My research integrates paleobiology with computational modeling. I aspire to advance evolutionary understanding through interdisciplinary approaches in sedimentology and geochemistry. I am interested in microfossil applications for paleoenvironmental reconstruction and industrial biostratigraphy. ",
     education: [
         {
             year: "2022 - 2027(expected)",
@@ -68,6 +68,10 @@ const cvData = {
     publications: [
 
     ],
+    currently_working: ["developing a computational method for identifying and quantifying colour patterns on bivalve shells."
+        
+    ]
+   
     gallery: [
         {
             title: "Sedimentology Field Trip",
