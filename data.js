@@ -68,9 +68,6 @@ const cvData = {
     publications: [
 
     ],
-    currently_working: ["developing a computational method for identifying and quantifying colour patterns on bivalve shells."
-        
-    ]
    
     gallery: [
         {
