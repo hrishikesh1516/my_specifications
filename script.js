@@ -137,7 +137,7 @@ function renderContent() {
                 <div class="gallery-grid">
                     ${trip.images.map((img, imgIndex) => `
                         <div class="gallery-item animate-in" style="animation-delay: ${(tripIndex * 0.1) + (imgIndex * 0.05)}s">
-                            <img src="./gallery/${trip.folder}/${img.file}" alt="${img.caption}" loading="lazy" onclick="openLightbox(this.src, '${img.caption}')">
+                            <img src="gallery/${trip.folder}/${img.file}" alt="${img.caption}" loading="lazy" onclick="openLightbox(this.src, '${img.caption}')">
                             <div class="gallery-caption">${img.caption}</div>
                         </div>
                     `).join('')}

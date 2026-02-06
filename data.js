@@ -10,8 +10,8 @@ const cvData = {
             twitter: "https://x.com/hrishikeshsen4"
         }
     },
-    about: ["I am a Music addicted Earth Sciences undergraduate at IISER Kolkata dedicated to decoding deep-time ecological narratives. My research integrates paleobiology with computational modeling. I aspire to advance evolutionary understanding through interdisciplinary approaches in sedimentology and geochemistry. I am interested in microfossil applications for paleoenvironmental reconstruction and industrial biostratigraphy. "
-            "I love experimenting my culinary skills and a wilderness adventure excites me the most .I have a deep rooted interest in Philosophy and non-fiction books, and I play the Violin during my leisure time "
+    about: ["I am a Music addicted Earth Sciences undergraduate at IISER Kolkata dedicated to decoding deep-time ecological narratives. My research integrates paleobiology with computational modeling. I aspire to advance evolutionary understanding through interdisciplinary approaches in sedimentology and geochemistry. I am interested in microfossil applications for paleoenvironmental reconstruction and industrial biostratigraphy. ",
+        "I love experimenting my culinary skills and a wilderness adventure excites me the most .I have a deep rooted interest in Philosophy and non-fiction books, and I play the Violin during my leisure time "
     ],
     education: [
         {
@@ -34,14 +34,14 @@ const cvData = {
             role: "Teaching Assistant for Geophysics and Hydrology Course ",
             institute: "Indian Institute of Science Education and Research, Kolkata",
             description: "Served as a teching assistant for 2nd year course.",
-            certificate: "./assets/TA-A-25-ES2104-22MS065.pdf"
+            certificate: "assets/TA-A-25-ES2104-22MS065.pdf"
         },
         {
             year: "2025",
             role: "Summer Intern",
             institute: "Indian Institute of Science Education and Research, Kolkata",
             description: "Explicitely analyzed the taxonomy and diversity of recent molluscs collected from the Western Coast of India.",
-            certificate: "./assets/SRP-2025_Certificate summer internship.pdf"
+            certificate: "assets/SRP-2025_Certificate summer internship.pdf"
         }
     ],
     certifications: [
@@ -49,44 +49,44 @@ const cvData = {
             title: "Fundamentals of Earthquake Seismology",
             institution: " Geological Society of India Training Institute",
             year: "2025",
-            certificate: "./assets/1741449165879-5fae7293ed6bcbbe63cb9f48.jpg",
+            certificate: "assets/1741449165879-5fae7293ed6bcbbe63cb9f48.jpg",
             description: "Certificate of completion."
         },
         {
             title: "Properties of the Lithosphere: links between Tectonics, Metamorphism and Surface Processe",
             institution: " Centre for Climate and Environmental Studies ,IISER Kolkata",
             year: "2024",
-            certificate: "./assets/Certificate-Hrishikesh LTMS.pdf",
+            certificate: "assets/Certificate-Hrishikesh LTMS.pdf",
             description: "Certificate of completion."
         },
         {
             title: "International Astronomy and Astrophysics Competition (IAAC)",
             institution: "IAAC",
             year: "2023",
-            certificate: "./assets/iaac certificate.pdf",
+            certificate: "assets/iaac certificate.pdf",
             description: "Certificate of achievement."
         },
         {
             title: "Quantum Computing",
             institution: "I-HUB Quantum Technology Foundation",
             year: "2023",
-            certificate: "./assets/quantum computing certificate.png",
+            certificate: "assets/quantum computing certificate.png",
             description: "Certificate of participation in Quantum Computing workshop."
         }
     ],
     publications: [
         {
             current_projects: " developing computational method for identifying and quantifying colour patterns on bivalve shells."
-
+        }
     ],
-   
+
     gallery: [
         {
             title: "Sedimentology Field Trip",
             year: "2024",
             folder: "sedimentology FT",
             description: "Exploration of sedimentary structures and depositional environments along the MohandRao , finding markers for tectonic activity along the Siwaliks.",
-            report: "./gallery/sedimentology FT/sedimentology field report.pdf",
+            report: "gallery/sedimentology FT/sedimentology field report.pdf",
             images: [
                 { file: "WhatsApp Image 2026-01-26 at 3.52.43 AM.jpeg", caption: "Outcrop observation along Mohand River, Dehradun" },
                 { file: "img2.jpeg", caption: "Ancient Foreland Basin stratigraphy of multistorey bedding" },
@@ -99,7 +99,7 @@ const cvData = {
             year: "2025",
             folder: "structural geology  and petrology FT",
             description: "Study of rocks and bed deformation and petrological composition.",
-            report: "./assets/Structural_Geology_Report.pdf",
+            report: "assets/Structural_Geology_Report.pdf",
             images: [
                 { file: "img1.jpeg", caption: "Crenulation formation analysis " },
                 { file: "img2.jpeg", caption: "Fracture and Bedding Plan measurement" },
