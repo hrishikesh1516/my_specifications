@@ -10,7 +10,9 @@ const cvData = {
             twitter: "https://x.com/hrishikeshsen4"
         }
     },
-    about: "I am a Music addicted Earth Sciences undergraduate at IISER Kolkata dedicated to decoding deep-time ecological narratives. My research integrates paleobiology with computational modeling. I aspire to advance evolutionary understanding through interdisciplinary approaches in sedimentology and geochemistry. I am interested in microfossil applications for paleoenvironmental reconstruction and industrial biostratigraphy. ",
+    about: ["I am a Music addicted Earth Sciences undergraduate at IISER Kolkata dedicated to decoding deep-time ecological narratives. My research integrates paleobiology with computational modeling. I aspire to advance evolutionary understanding through interdisciplinary approaches in sedimentology and geochemistry. I am interested in microfossil applications for paleoenvironmental reconstruction and industrial biostratigraphy. "
+            "I love experimenting my culinary skills and a wilderness adventure excites me the most .I have a deep rooted interest in Philosophy and non-fiction books, and I play the Violin during my leisure time "
+    ],
     education: [
         {
             year: "2022 - 2027(expected)",
@@ -44,6 +46,13 @@ const cvData = {
     ],
     certifications: [
         {
+            title: "Fundamentals of Earthquake Seismology",
+            institution: " Geological Society of India Training Institute",
+            year: "2025",
+            certificate: "./assets/1741449165879-5fae7293ed6bcbbe63cb9f48.jpg",
+            description: "Certificate of completion."
+        },
+        {
             title: "Properties of the Lithosphere: links between Tectonics, Metamorphism and Surface Processe",
             institution: " Centre for Climate and Environmental Studies ,IISER Kolkata",
             year: "2024",
@@ -66,6 +75,8 @@ const cvData = {
         }
     ],
     publications: [
+        {
+            current_projects: " developing computational method for identifying and quantifying colour patterns on bivalve shells."
 
     ],
    
@@ -87,7 +98,7 @@ const cvData = {
             title: "Structural Geology and Petrology Field Trip",
             year: "2025",
             folder: "structural geology  and petrology FT",
-            description: "Study of rock deformation and petrological composition.",
+            description: "Study of rocks and bed deformation and petrological composition.",
             report: "./assets/Structural_Geology_Report.pdf",
             images: [
                 { file: "img1.jpeg", caption: "Crenulation formation analysis " },
