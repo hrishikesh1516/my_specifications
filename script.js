@@ -121,6 +121,7 @@ function renderContent() {
         </div>
         `).join('');
 
+
     // Render Gallery
     const galleryContainer = document.getElementById('gallery-content');
     if (galleryContainer && cvData.gallery) {
@@ -134,18 +135,111 @@ function renderContent() {
                         View Field Report
                     </a></div>` : ''}
                 </div>
-                <div class="gallery-grid">
-                    ${trip.images.map((img, imgIndex) => `
-                        <div class="gallery-item animate-in" style="animation-delay: ${(tripIndex * 0.1) + (imgIndex * 0.05)}s">
-                            <img src="gallery/${trip.folder}/${img.file}" alt="${img.caption}" loading="lazy" onclick="openLightbox(this.src, '${img.caption}')">
-                            <div class="gallery-caption">${img.caption}</div>
-                        </div>
-                    `).join('')}
+                <div class="gallery-wrapper" id="gallery-wrapper-${tripIndex}">
+                    <div class="gallery-track">
+                        ${trip.images.map(img => `
+                            <div class="gallery-item">
+                                <img src="gallery/${trip.folder}/${img.file}" alt="${img.caption}" loading="lazy" onclick="openLightbox(this.src, '${img.caption}')">
+                                <div class="gallery-caption">${img.caption}</div>
+                            </div>
+                        `).join('')}
+                    </div>
                 </div>
             </div>
         `).join('');
+
+        // Initialize GSAP Animations for each gallery
+        setTimeout(initGalleryAnimation, 100); // Small delay to ensure DOM is ready
     }
 }
+
+function initGalleryAnimation() {
+    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+        console.warn('GSAP or ScrollTrigger not loaded');
+        return;
+    }
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    document.querySelectorAll('.gallery-wrapper').forEach((wrapper) => {
+        const track = wrapper.querySelector('.gallery-track');
+        const originalItems = gsap.utils.toArray(track.children);
+
+        // Clone items for loop seamlessness (add enough copies to fill screen width if needed, or just double)
+        // For simplicity and effectiveness, we'll clone the entire set once
+        originalItems.forEach(item => {
+            const clone = item.cloneNode(true);
+            track.appendChild(clone);
+        });
+
+        const allItems = gsap.utils.toArray(track.children);
+
+        const itemWidth = allItems[0].offsetWidth + 24; // Width + gap (1.5rem = 24px)
+        const totalWidth = itemWidth * allItems.length;
+
+        // Setup Infinite Loop
+        const wrapValue = gsap.utils.unitize(x => parseFloat(x) % (totalWidth / 2));
+        // We actually want to move by half the total width (since we doubled it)
+
+        // User's approach adapted:
+        // Use a simple ticker based approach or the modifiers plugin
+
+        let xPos = 0;
+
+        // Using a simpler approach for the loop than the complex modifier one 
+        // because modifiers can be tricky with dynamic widths.
+        // Let's use the provided code logic
+
+        const sliderWidth = track.scrollWidth;
+        const halfWidth = sliderWidth / 2;
+
+        // Set initial state
+        gsap.set(allItems, {
+            x: 0
+        });
+
+        const additionalX = { val: 0 };
+        let additionalXAnim;
+        let offset = 0;
+
+        allItems.forEach((item, i) => {
+            gsap.to(item, {
+                x: `-=${halfWidth}`, // Move left by half the total width
+                duration: 30, // Adjust speed here
+                ease: "none",
+                repeat: -1,
+                modifiers: {
+                    x: gsap.utils.unitize(x => {
+                        offset += additionalX.val;
+                        return (parseFloat(x) + offset) % halfWidth;
+                    })
+                }
+            });
+        });
+
+        // Scroll acceleration
+        ScrollTrigger.create({
+            trigger: wrapper,
+            start: "top 80%",
+            end: "bottom 20%",
+            onUpdate: function (self) {
+                const velocity = self.getVelocity();
+                if (velocity > 0) {
+                    if (additionalXAnim) additionalXAnim.kill();
+                    additionalX.val = -velocity / 2000;
+                    additionalXAnim = gsap.to(additionalX, { val: 0 });
+                }
+                if (velocity < 0) {
+                    if (additionalXAnim) additionalXAnim.kill();
+                    // Reverse direction logic if desired, or just accelerate same way
+                    additionalX.val = -velocity / 3000;
+                    additionalXAnim = gsap.to(additionalX, { val: 0 });
+                }
+            }
+        });
+    });
+}
+
 
 // Lightbox functionality (optional but nice)
 function openLightbox(src, caption) {
