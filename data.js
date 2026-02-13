@@ -53,7 +53,7 @@ const cvData = {
             description: "Certificate of completion."
         },
         {
-            title: "Properties of the Lithosphere: links between Tectonics, Metamorphism and Surface Processe",
+            title: "Properties of the Lithosphere: \n links between Tectonics, Metamorphism and Surface Processe",
             institution: " Centre for Climate and Environmental Studies ,IISER Kolkata",
             year: "2024",
             certificate: "assets/Certificate-Hrishikesh LTMS.pdf",
