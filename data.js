@@ -1,7 +1,7 @@
 const cvData = {
     personal: {
         name: "Hrishikesh Sen",
-        title: "4th Year Student, BS-MS",
+        title: "IISER Kolkata - 4th Year Student, BS-MS",
         email: "hs22ms065@iiserkol.ac.in",
         location: "Kolkata",
         social: {
