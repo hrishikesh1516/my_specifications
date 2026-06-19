@@ -99,7 +99,7 @@ const cvData = {
             year: "2025",
             folder: "structural geology  and petrology FT",
             description: "Study of rocks and bed deformation and petrological composition.",
-            report: "assets/structural and petrology field report.pdf",
+            report: "assets/structural and petrology field_report.pdf",
             images: [
                 { file: "img1.jpeg", caption: "Crenulation formation analysis " },
                 { file: "img2.jpeg", caption: "Fracture and Bedding Plan measurement" },
