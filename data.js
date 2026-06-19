@@ -109,6 +109,21 @@ const cvData = {
                 { file: "img6.jpeg", caption: "Exposed Mylonites and Shear zone alonng Subarnarekha River" },
                 { file: "img7.jpeg", caption: "Location position on topo map" }
             ]
+        },
+        {
+            title: "Paleontology Field Work",
+            year: "2026",
+            folder: "Paleontology FT",
+            description: "Cretaceous and Cenozoic fossil collection from the Kutch Basin ",
+            report: " ",
+            images: [
+                { file: "img1.jpeg" },
+                { file: "img2.jpeg" },
+                { file: "img3.jpeg" },
+                { file: "img4.jpg" },
+                { file: "img5.jpg" },
+                { file: "img6.jpeg" }
+            ]
         }
     ]
 };
