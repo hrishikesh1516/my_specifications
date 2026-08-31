@@ -23,11 +23,11 @@ const cvData = {
     ],
     experience: [
         {
-            year: "2026-present",
+            year: "2026",
             role: "Teaching Assistant for Earth System and Processes Course",
             institute: "Indian Institute of Science Education and Research, Kolkata",
             description: "Serving as a teching assistant for 1st year course.",
-            certificate: ""
+            certificate: "assets/TA-S-26-ES1201-22MS065.pdf"
         },
         {
             year: "2025",
